@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root
+{
+    --clr: #222327
+}
+body
+{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    overflow: hidden;
+    position: fixed;
+    height: 740px;
+    width: 360px;
+}
+nav
+{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    align-content: center;
+    border-bottom: 1px solid black;
+    
+}
+.esquerda
+{
+    width: 33%;
+    height: 60px;
+}
+.logo
+{
+    width: 60px;
+    height: 60px;
+}
+.direita
+{
+    width: 33%;
+    height: 60px;
+    align-items: center;
+    align-content: center;
+    justify-content: right;
+   
+    display: flex;
+}
+.carrinho
+{
+    width: 40px;
+    height: 40px;
+}
+.principal
+{
+    height: 575px;
+    width: 360px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+.quadrados1
+{
+    width: 360px;
+    height: 120px;
+    background-color: #050505;
+    position: absolute;
+    opacity: 50%;
+    top: 95px;
+    z-index: 1;
+}
+.quadrado1
+{
+    position: absolute;
+    width: 360px;
+    height: 120px;
+    background-color: #005CD6;
+    background-image: url(lentes.png);
+    top: 95px;
+}
+.quadrados2
+{
+    width: 360px;
+    height: 120px;
+    background-color: #050505;
+    position: absolute;
+    opacity: 50%;
+    top: 235px;
+    z-index: 1;
+}
+.quadrado2
+{
+    width: 360px;
+    height: 120px;
+    background-color: #005CD6;
+    background-image: url(images\ \(1\).jpg);
+    position: absolute;
+    top: 235px;
+}
+.quadrados3
+{
+    width: 360px;
+    height: 120px;
+    background-color: #050505;
+    position: absolute;
+    opacity: 50%;
+    top: 375px;
+    z-index: 1;
+}
+.quadrado3
+{
+    width: 360px;
+    height: 120px;
+    background-color: #005CD6;
+    background-image: url(oculosdegrau.jpg);
+    position: absolute;
+    top: 375px;
+}
+.quadrados4
+{
+    width: 360px;
+    height: 120px;
+    background-color: #050505;
+    opacity: 50%;
+    position: absolute;
+    top: 515px;
+    z-index: 1;
+}
+.quadrado4
+{
+    width: 360px;
+    height: 120px;
+    background-color: #005CD6;
+    background-image: url(armaçao.jpg);
+    position: absolute;
+    top: 515px;
+}
+.navegacao
+{
+    width: 360px;
+    height: 70px;
+    background-color: #005CD6;
+    position: relative;    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.texto
+{
+    color: white;
+    font-weight: bolder;
+    opacity: 100%;
+}
+
+.navegacao ul
+{
+    display: flex;
+    width: 300px;
+}
+.navegacao ul li
+{
+    position: relative;
+    list-style: none;
+    width: 100px;
+    height: 60px;
+    z-index: 1;
+}
+.navegacao ul li a
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+.navegacao ul li a .icon
+{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: white;
+}
+.navegacao ul li.active a .icon
+{
+    transform: translateY(-35px);
+}
+.navegacao ul li a .text
+{
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.navegacao ul li.active a .text
+{
+    opacity: 1;
+    transform: translateY(10px);
+}
+.indicator
+{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: -50%;
+    background: #005CD6;
+    border-radius: 50%;
+    border: 6px solid white;
+    transition: 0.5s;
+}
+.indicator::before
+{
+    content: '';
+    position: absolute;
+    top: 46%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 50px;
+    box-shadow: 0px -12px 0 0 white;
+}
+.indicator::after
+{
+    content: '';
+    position: absolute;
+    top: 46%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 50px;
+    box-shadow: -1px -12px 0 0 white;
+}
+.navegacao ul li:nth-child(1).active ~ .indicator
+{
+    transform: translateX(calc(75px * 0));
+}
+.navegacao ul li:nth-child(2).active ~ .indicator
+{
+    transform: translateX(calc(75px * 1));
+}
+.navegacao ul li:nth-child(3).active ~ .indicator
+{
+    transform: translateX(calc(75px * 2));
+}
+.navegacao ul li:nth-child(4).active ~ .indicator
+{
+    transform: translateX(calc(75px * 3));
+}
