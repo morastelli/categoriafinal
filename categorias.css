@@ -79,8 +79,8 @@ nav
     position: absolute;
     width: 360px;
     height: 120px;
-    background-color: #005CD6;
-    background-image: url(lentes.png);
+    background-color: #093F61;
+    background-image: url(lentes.jpg);
     top: 70px;
 }
 .quadrados2
@@ -97,7 +97,7 @@ nav
 {
     width: 360px;
     height: 120px;
-    background-color: #005CD6;
+    background-color: #093f61;
     background-image: url(images\ \(1\).jpg);
     position: absolute;
     top: 220px;
@@ -116,7 +116,7 @@ nav
 {
     width: 360px;
     height: 120px;
-    background-color: #005CD6;
+    background-color: #093f61;
     background-image: url(oculosdegrau.jpg);
     position: absolute;
     top: 370px;
@@ -135,7 +135,7 @@ nav
 {
     width: 360px;
     height: 120px;
-    background-color: #005CD6;
+    background-color: #093f61;
     background-image: url(armaçao.jpg);
     position: absolute;
     top: 520px;
@@ -144,7 +144,7 @@ nav
 {
     width: 360px;
     height: 70px;
-    background-color: #005CD6;
+    background-color: #093F61;
     position: relative;    
     justify-content: center;
     align-items: center;
@@ -220,7 +220,7 @@ nav
     width: 75px;
     height: 75px;
     top: -50%;
-    background: #005CD6;
+    background: #093F61;
     border-radius: 50%;
     border: 6px solid white;
     transition: 0.5s;
