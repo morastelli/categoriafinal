@@ -62,7 +62,7 @@ nav
     width: 360px;
     justify-content: space-between;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
 .quadrados1
 {
@@ -82,6 +82,9 @@ nav
     background-color: #093F61;
     background-image: url(lentes.jpg);
     top: 70px;
+    border-top: 3px solid #093F61;
+    border-bottom: 3px solid #093F61;
+    
 }
 .quadrados2
 {
@@ -101,6 +104,8 @@ nav
     background-image: url(images\ \(1\).jpg);
     position: absolute;
     top: 220px;
+    border-top: 3px solid #093F61;
+    border-bottom: 3px solid #093F61;
 }
 .quadrados3
 {
@@ -111,6 +116,7 @@ nav
     opacity: 50%;
     top: 370px;
     z-index: 1;
+    
 }
 .quadrado3
 {
@@ -120,6 +126,8 @@ nav
     background-image: url(oculosdegrau.jpg);
     position: absolute;
     top: 370px;
+    border-top: 3px solid #093F61;
+    border-bottom: 3px solid #093F61;
 }
 .quadrados4
 {
@@ -139,6 +147,81 @@ nav
     background-image: url(armaçao.jpg);
     position: absolute;
     top: 520px;
+    border-top: 3px solid #093F61;
+    border-bottom: 3px solid #093F61;
+}
+.quadradosdireita1
+{
+    border-top: 3px solid #093F61;
+    width: 100px;
+    height: 120px;
+    background-color: white;
+    z-index: 2;
+    top: 70px;
+    position: absolute;
+    left: 260px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    display: flex;
+    border-bottom: 3px solid #093F61;
+}
+.quadradosdireita2
+{
+    border-top: 3px solid #093F61;
+    width: 100px;
+    height: 120px;
+    background-color: white;
+    z-index: 2;
+    top: 220px;
+    position: absolute;
+    left: 260px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    display: flex;
+    border-bottom: 3px solid #093F61;
+}
+.quadradosdireita3
+{
+    border-top: 3px solid #093F61;
+    width: 100px;
+    height: 120px;
+    background-color: white;
+    z-index: 2;
+    top: 370px;
+    position: absolute;
+    left: 260px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    display: flex;
+    border-bottom: 3px solid #093F61;
+}
+.quadradosdireita4
+{
+    border-top: 3px solid #093F61;
+    width: 100px;
+    height: 120px;
+    background-color: white;
+    z-index: 2;
+    top: 520px;
+    position: absolute;
+    left: 260px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    display: flex;
+    border-bottom: 3px solid #093F61;
+}
+.seta
+{
+    width: 20px;
+
 }
 .navegacao
 {
