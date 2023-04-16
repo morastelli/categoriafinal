@@ -8,12 +8,15 @@
     <link rel="stylesheet" type="text/css" href="categorias.css">
 </head>
 <body>
+        <!-- Navbar da página. -->
     <nav>
         <div class="esquerda"><img src="logoetexto.png" class="logo"></div>
         Categorias
         <div class="direita"><img src="carrinho.png" class="carrinho"></div>
     </nav>
-    <div class="principal">
+
+        <!-- Div que engloba os quadrados de categoria. -->
+    <div class="principal"> 
             <div class="quadrados1"></div>
             <div class="quadradosdireita1">
                 <img class="seta" src="seta.png">
@@ -35,7 +38,9 @@
             </div>
         <div class="quadrado4"><i class="texto">Armações</i></div>
     </div>
-    <footer class="navegacao">
+
+        <!-- Footer da página. -->
+    <footer>
         <ul>
             <li class="list active">
                 <a href="#">
@@ -72,7 +77,11 @@
             <div class="indicator"></div>
         </ul>
     </footer>
+
     <script>
+
+        // Function activeLink() = Faz o texto e ícone subir. // 
+
         const list = document.querySelectorAll('.list');
         function activeLink()
         {
@@ -80,10 +89,16 @@
             item.classList.remove('active'));
             this.classList.add('active');
         }
+
+        // Quando clicar em algum ícone da navbar de baixo, faz a bola se mover. // 
+
         list.forEach((item) =>
         item.addEventListener('click',activeLink));
 
     </script>
+    
+        <!-- Import de ícones. -->
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

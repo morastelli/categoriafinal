@@ -1,4 +1,10 @@
+
+/* Import de fonte. */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* Css universal da página */
 *
 {
     margin: 0;
@@ -6,10 +12,14 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+/* Criação de váriavel. */
 :root
 {
     --clr: #222327
 }
+
+/* Configurações do body. */
 body
 {
     justify-content: space-between;
@@ -22,6 +32,8 @@ body
     height: 740px;
     width: 360px;
 }
+
+/* Configuração de posicionamento e tamanho da navbar. */
 nav
 {
     width: 100%;
@@ -32,6 +44,8 @@ nav
     align-content: center;
     position: absolute;
 }
+
+/* Configuração de imagens da esquerda e direita da navbar. */
 .esquerda
 {
     width: 33%;
@@ -56,6 +70,8 @@ nav
     width: 40px;
     height: 40px;
 }
+
+/* Configuração de posicionamento e tamanho da div que engloba os quadrados de categoria. */
 .principal
 {
     height: 575px;
@@ -64,6 +80,11 @@ nav
     display: flex;
     flex-direction: column; 
 }
+
+/* Quadrados1,2,3,4 = Sombra por cima das imagens.
+   Quadrado1,2,3,4 = Configuração de tamanho e posicionamento + Imagens.
+   Quadradosdireita1,2,3,4 = Quadrado branco com seta por cima das imagens.
+*/
 .quadrados1
 {
     width: 360px;
@@ -223,8 +244,9 @@ nav
     width: 20px;
 
 }
-.navegacao
-{
+
+/* Configuração de tamanho, posicionamento e cor de fundo do footer. */
+footer{
     width: 360px;
     height: 70px;
     background-color: #093F61;
@@ -233,6 +255,7 @@ nav
     align-items: center;
     display: flex;
 }
+/* Tamanho, posicionamento e cor de texto do footer. */
 .texto
 {
     color: white;
@@ -242,13 +265,15 @@ nav
     position: absolute;
     z-index: 2;
 }
-
-.navegacao ul
+/* Configurações geral do posicionamento dos ícones e texto do footer. */
+footer ul
 {
     display: flex;
     width: 300px;
 }
-.navegacao ul li
+
+/* Configuração de posicionamento dos ícones e texto do footer.. */
+footer ul li
 {
     position: relative;
     list-style: none;
@@ -256,7 +281,9 @@ nav
     height: 60px;
     z-index: 1;
 }
-.navegacao ul li a
+
+/* Configuração de posicionamento específica dos ícones do footer. */
+footer ul li a
 {
     position: relative;
     display: flex;
@@ -267,7 +294,8 @@ nav
     text-align: center;
     font-weight: 500;
 }
-.navegacao ul li a .icon
+/* Configuração de tamanho e cor específica dos ícones do footer. */
+footer ul li a .icon
 {
     position: relative;
     display: block;
@@ -277,11 +305,15 @@ nav
     transition: 0.5s;
     color: white;
 }
-.navegacao ul li.active a .icon
+/* Configuração de altura da animação ativa específica dos ícones do footer. */
+
+footer ul li.active a .icon
 {
     transform: translateY(-35px);
 }
-.navegacao ul li a .text
+/* Configuração de tamanho e cor específica dos textos do footer. */
+
+footer ul li a .text
 {
     position: absolute;
     color: white;
@@ -292,11 +324,16 @@ nav
     opacity: 0;
     transform: translateY(20px);
 }
-.navegacao ul li.active a .text
+/* Configuração de altura da animação ativa específica dos texto do footer. */
+
+footer ul li.active a .text
 {
     opacity: 1;
     transform: translateY(10px);
 }
+/* Configuração de tamanho, cor, borda e tempo de animação do indicador. */
+
+
 .indicator
 {
     position: absolute;
@@ -308,19 +345,22 @@ nav
     border: 6px solid white;
     transition: 0.5s;
 }
-.navegacao ul li:nth-child(1).active ~ .indicator
+
+/* Distância percorrida pelo indicador */
+
+footer ul li:nth-child(1).active ~ .indicator
 {
     transform: translateX(calc(75px * 0));
 }
-.navegacao ul li:nth-child(2).active ~ .indicator
+footer ul li:nth-child(2).active ~ .indicator
 {
     transform: translateX(calc(75px * 1));
 }
-.navegacao ul li:nth-child(3).active ~ .indicator
+footer ul li:nth-child(3).active ~ .indicator
 {
     transform: translateX(calc(75px * 2));
 }
-.navegacao ul li:nth-child(4).active ~ .indicator
+footer ul li:nth-child(4).active ~ .indicator
 {
     transform: translateX(calc(75px * 3));
 }
